@@ -23,10 +23,7 @@ import java.util.Map;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/")
-    public String test () {
-        return "hello";
-    }
+
     @PostMapping("/join")
     public ResponseEntity<User> join (@RequestBody JoinDto joinDto) {
 
