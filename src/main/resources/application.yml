@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    include:
+      - local
+      -
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${CLEARDB_DATABASE_URL}
+    username: ${CLEARDB_DATABASE_USERNAME}
+    password: ${CLEARDB_DATABASE_PASSWORD}
+
+    mvc:
+      static-path-pattern: /resources/**
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+      properties:
+        hibernate:
+          show_sql: true
+          format_sql: true
+          default_batch_fetch_size: 500
+      database: mysql
