@@ -1,2 +1,3 @@
 
-web: java $JAVA_OPTS -jar heroku-api/build/libs/heroku-api.jar
+
+web: java -jar build/server/webapp-runner-*.jar build/libs/*.war
