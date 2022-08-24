@@ -1,7 +1,3 @@
-jar {
-    baseName = 'border-site'
-    version ='0.0.1'
-}
 
 plugins {
     id 'org.springframework.boot' version '2.7.3'
