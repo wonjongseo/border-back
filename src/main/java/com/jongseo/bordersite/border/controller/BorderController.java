@@ -51,6 +51,8 @@ public class BorderController {
         }
         try {
 
+
+
             BorderUserDto borderUserDto = borderService.updateBorder(id, loggedInEmail, borderDto);
             return new ResponseEntity<>(borderUserDto, HttpStatus.ACCEPTED);
         } catch (RuntimeException e) {
