@@ -1,22 +1,16 @@
 spring:
-  profiles:
-    include:
-      - local
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/KISSCO
     password: dnjswhdtj1!
+
     username: root
-
-
-
     mvc:
       static-path-pattern: /resources/**
 
     jpa:
       hibernate:
-        ddl-auto: update
+        ddl-auto: create-drop
 
       properties:
         hibernate:
